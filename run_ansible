@@ -1,0 +1,5 @@
+#!/bin/bash -e
+
+cd ansible
+ANSIBLE_CONFIG=`pwd`
+ansible-playbook -vvvv -i . main.yml

@@ -126,7 +126,6 @@ resource "null_resource" "provisioners" {
   }
 
   provisioner "local-exec" {
-    working_dir = "ansible"
-    command = "ansible-playbook -vvv --timeout 1800 -i .  main.yml"
+    command = "./run_ansible"
   }
 }
